@@ -45,3 +45,17 @@ Then provide:
 - Avoid short-lived trends unless they fit the brand and product naturally.
 - Keep Instagram first unless another platform is explicitly requested.
 - Prefer ideas feasible with a phone, real product, packaging, hands, founder, workplace, or customer-provided material.
+
+## Version 2 — Brand Voice, Belege und Grenzen
+
+- **Nur Instagram für Produkt-Shops.** Andere Kanäle nicht ungefragt bearbeiten.
+- Liegt ein vom Shop **bestätigtes** Instagram-Brand-Voice-Profil vor, nutze dessen Anrede, Wortwahl, Rhythmus, Humor, Grenzen und CTA-Stil. Ein Profil wird **nicht automatisch** aus einem anderen Skill oder Chat geladen. Ohne Profil einen sachlichen, vorläufigen Stil nutzen; keine angebliche Markenpassung behaupten.
+- Verifiziere konkrete Produktangaben anhand der vom Nutzer bereitgestellten Fakten. Erfinde keine Wirkungen, Materialien, Kundenbewertungen, Verkaufszahlen, Tests, Verfügbarkeit, Lieferzeiten, Preise oder eigenen Erfahrungen. Fehlende Belege als offen markieren oder durch neutrale Formulierungen ersetzen.
+- Maximal drei kurze gruppierte Rückfragen zu **entscheidungsrelevanten** Lücken; sonst einen nutzbaren Entwurf mit transparenten Annahmen liefern. Die Texte müssen für kleine Shops mit wenigen Fotos und wenig Zeit realistisch sein.
+- Inhalte sind **Entwürfe**, keine Veröffentlichung oder rechtliche Freigabe. Bei Kooperation, UGC, fremden Bildern, Musik oder sensiblen Produktclaims erforderliche Prüfung von Kennzeichnung, Rechten und Belegen sichtbar machen, ohne pauschal jedes Eigenprodukt-Posting als kennzeichnungspflichtig zu behaupten.
+- Ohne bereitgestellte Dateien oder ausdrücklich verbundene Tools weder Instagram-Insights, Account-Zugriff, aktuelle Trends noch eine tatsächliche Prüfung von Bild/Video behaupten. Keine Algorithmus- oder Umsatzgarantien.
+- Immer zuerst das gewünschte Instagram-Ergebnis liefern. Ausführliche Erklärungen und Prüfhinweise nur soweit relevant; eine bereits gute Nutzerfassung nicht unnötig umschreiben.
+
+## Neue Ideen statt kosmetischer Wiederholung
+
+Ein wiederholtes Thema ist erlaubt, wenn eine andere echte Kundenfrage, Kaufphase, Demonstration oder neue Information hinzukommt. Stelle bei nur einem Produkt eher unterschiedliche Entscheidungen (Material, Größe, Anwendung, Geschenk, Pflege, Lieferung) dar, als Vorteile zu erfinden. Kennzeichne Ideen, die noch Nachweise oder Material brauchen. Ohne Beitragsarchiv keine Originalitätsprüfung gegen den tatsächlichen Instagram-Account behaupten.

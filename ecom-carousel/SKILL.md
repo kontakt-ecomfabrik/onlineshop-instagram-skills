@@ -17,7 +17,7 @@ Read [references/carousel-patterns.md](references/carousel-patterns.md) and choo
 
 1. Write three cover options with different approaches.
 2. Choose the strongest option and explain the choice in one sentence.
-3. Default to four or five slides.
+3. Default to four or five slides, but keep fewer or use more when the content benefits.
 4. Give every slide one job and a clear transition to the next.
 5. Keep text to roughly three short lines or fewer per slide unless a precise comparison needs slightly more.
 6. Use concrete product, customer, or shop examples.
@@ -38,10 +38,24 @@ Return:
 
 ## Carousel rules
 
-- Keep four to five slides as the standard. Use more only when the user requests it or the information cannot stay accurate and useful otherwise.
+- Four or five slides are a starting point, not a hard rule; a concise three-slide explanation or longer evidence-based guide may be better.
 - Do not place labels such as “Hook,” “Problem,” or “CTA” in the visible slide copy.
 - Avoid crowded covers, paragraph slides, vague motivation, and listicles with no product relevance.
 - Do not repeat the same sentence in the caption.
 - Do not invent product benefits, comparisons, reviews, tests, statistics, or customer results.
 - Prefer one strong example over several shallow examples.
 - Write in natural, direct language that fits mobile reading.
+
+## Version 2 — Brand Voice, Belege und Grenzen
+
+- **Nur Instagram für Produkt-Shops.** Andere Kanäle nicht ungefragt bearbeiten.
+- Liegt ein vom Shop **bestätigtes** Instagram-Brand-Voice-Profil vor, nutze dessen Anrede, Wortwahl, Rhythmus, Humor, Grenzen und CTA-Stil. Ein Profil wird **nicht automatisch** aus einem anderen Skill oder Chat geladen. Ohne Profil einen sachlichen, vorläufigen Stil nutzen; keine angebliche Markenpassung behaupten.
+- Verifiziere konkrete Produktangaben anhand der vom Nutzer bereitgestellten Fakten. Erfinde keine Wirkungen, Materialien, Kundenbewertungen, Verkaufszahlen, Tests, Verfügbarkeit, Lieferzeiten, Preise oder eigenen Erfahrungen. Fehlende Belege als offen markieren oder durch neutrale Formulierungen ersetzen.
+- Maximal drei kurze gruppierte Rückfragen zu **entscheidungsrelevanten** Lücken; sonst einen nutzbaren Entwurf mit transparenten Annahmen liefern. Die Texte müssen für kleine Shops mit wenigen Fotos und wenig Zeit realistisch sein.
+- Inhalte sind **Entwürfe**, keine Veröffentlichung oder rechtliche Freigabe. Bei Kooperation, UGC, fremden Bildern, Musik oder sensiblen Produktclaims erforderliche Prüfung von Kennzeichnung, Rechten und Belegen sichtbar machen, ohne pauschal jedes Eigenprodukt-Posting als kennzeichnungspflichtig zu behaupten.
+- Ohne bereitgestellte Dateien oder ausdrücklich verbundene Tools weder Instagram-Insights, Account-Zugriff, aktuelle Trends noch eine tatsächliche Prüfung von Bild/Video behaupten. Keine Algorithmus- oder Umsatzgarantien.
+- Immer zuerst das gewünschte Instagram-Ergebnis liefern. Ausführliche Erklärungen und Prüfhinweise nur soweit relevant; eine bereits gute Nutzerfassung nicht unnötig umschreiben.
+
+## Mobile Qualitätsprüfung
+
+Jede Slide muss eine eigene Frage beantworten oder einen Gedanken nachvollziehbar weiterführen; keine Füllfolien. Bei wenig Material eine kürzere Folge statt künstlicher Länge. Lesbarkeit, Kontrast, echte Produktbilder, Bildrechte und Markenstimme beachten. Gib finalen Slide-Text getrennt von Regie-/Designhinweisen aus. Keine Algorithmus-Vorteile bestimmter Slide-Zahlen behaupten.

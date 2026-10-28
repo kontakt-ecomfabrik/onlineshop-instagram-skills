@@ -25,8 +25,10 @@ Determine the user's immediate need:
 | Educational or comparison slide post | ecom-carousel |
 | Sequential, interactive, or daily content | ecom-story |
 | Copy accompanying an existing post | ecom-caption |
+| Individuelle Instagram-Markenstimme entwickeln | ecom-brand-voice |
+| Fertige Instagram-Inhalte prüfen und überarbeiten | ecom-content-review |
 
-Claude may compose matching skills automatically. Do not attempt to invoke another skill from inside this skill. If no specialist skill is active, use [references/format-router.md](references/format-router.md) and produce the requested format directly.
+Claude may compose matching skills automatically. Do not attempt to invoke another skill from inside this skill. If no specialist skill is active, use [references/format-router.md](references/format-router.md) and produce the requested format directly. For a Brand-Voice- or Review-Auftrag, bearbeite die Aufgabe ehrlich innerhalb deiner Möglichkeiten, ohne die Aktivierung eines anderen Skills vorzutäuschen.
 
 ## Work in this order
 
@@ -56,3 +58,17 @@ For an open request such as “Create content for my shop,” return:
 - Do not make legal, medical, environmental, safety, or performance claims without user-provided or verified evidence.
 - Do not write generic coach content when a real product question, use case, objection, comparison, demonstration, or customer outcome is available.
 - Keep German output in natural **Du** form unless the user requests another language or address.
+
+## Version 2 — Brand Voice, Belege und Grenzen
+
+- **Nur Instagram für Produkt-Shops.** Andere Kanäle nicht ungefragt bearbeiten.
+- Liegt ein vom Shop **bestätigtes** Instagram-Brand-Voice-Profil vor, nutze dessen Anrede, Wortwahl, Rhythmus, Humor, Grenzen und CTA-Stil. Ein Profil wird **nicht automatisch** aus einem anderen Skill oder Chat geladen. Ohne Profil einen sachlichen, vorläufigen Stil nutzen; keine angebliche Markenpassung behaupten.
+- Verifiziere konkrete Produktangaben anhand der vom Nutzer bereitgestellten Fakten. Erfinde keine Wirkungen, Materialien, Kundenbewertungen, Verkaufszahlen, Tests, Verfügbarkeit, Lieferzeiten, Preise oder eigenen Erfahrungen. Fehlende Belege als offen markieren oder durch neutrale Formulierungen ersetzen.
+- Maximal drei kurze gruppierte Rückfragen zu **entscheidungsrelevanten** Lücken; sonst einen nutzbaren Entwurf mit transparenten Annahmen liefern. Die Texte müssen für kleine Shops mit wenigen Fotos und wenig Zeit realistisch sein.
+- Inhalte sind **Entwürfe**, keine Veröffentlichung oder rechtliche Freigabe. Bei Kooperation, UGC, fremden Bildern, Musik oder sensiblen Produktclaims erforderliche Prüfung von Kennzeichnung, Rechten und Belegen sichtbar machen, ohne pauschal jedes Eigenprodukt-Posting als kennzeichnungspflichtig zu behaupten.
+- Ohne bereitgestellte Dateien oder ausdrücklich verbundene Tools weder Instagram-Insights, Account-Zugriff, aktuelle Trends noch eine tatsächliche Prüfung von Bild/Video behaupten. Keine Algorithmus- oder Umsatzgarantien.
+- Immer zuerst das gewünschte Instagram-Ergebnis liefern. Ausführliche Erklärungen und Prüfhinweise nur soweit relevant; eine bereits gute Nutzerfassung nicht unnötig umschreiben.
+
+## Routing-Priorität
+
+Wenn die Anfrage "meine Markenstimme entwickeln" lautet, zuerst Brand Voice; wenn ein **vorhandener** Beitrag geprüft werden soll, zuerst Content Review (nicht ungefragt nur eine neue Caption schreiben). Bei gemischten Aufträgen: Ziel klären, Inhalt erstellen und anschließend die klar benannten Prüfregeln anwenden. Andere Skills nicht als erfolgreich aufgerufen darstellen, wenn der Host ihre Aktivierung nicht bestätigt.
