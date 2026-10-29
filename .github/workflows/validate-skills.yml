@@ -9,6 +9,8 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Validate file structure and references
         run: python3 scripts/validate_skills.py
+      - name: Test skill ZIP installation structure and validator failure detection
+        run: python3 -m unittest discover -s tests -p 'test_*.py' -v

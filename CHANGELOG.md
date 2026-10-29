@@ -1,6 +1,6 @@
 # Änderungsprotokoll
 
-## 2.0.0 (2026-10-26)
+## 2.0.0 (2026-10-28)
 
 - Zwei neue, eigenständig installierbare Instagram-Skills: **ecom-brand-voice** und **ecom-content-review**.
 - Content-Router um Markenstimme und Beitragsprüfung erweitert.

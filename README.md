@@ -74,6 +74,6 @@ Schreibe anschließend eine überarbeitete Fassung ohne erfundene Angaben.
 
 ## Autorin
 
-**Dr. Kenanah Shereih – EcomFabrik** · [ecomfabrik.de](https://ecomfabrik.de) · [Instagram @ecom_fabrik.de](https://www.instagram.com/ecom_fabrik.de/)
+**Dr. Kenanah Shereih – EcomFabrik** · [ecomfabrik.de](https://ecomfabrik.de) · [Instagram @ecomfabrik.de](https://www.instagram.com/ecomfabrik.de/)
 
 Ein öffentliches Repository ohne ausdrückliche Lizenz ist nicht automatisch zur beliebigen Weiterverwendung freigegeben.
