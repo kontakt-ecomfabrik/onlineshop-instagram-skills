@@ -35,6 +35,17 @@ Für ein Projekt nach `.agents/skills/` kopieren. In Codex z. B. `$ecom-brand-vo
 
 Die neun Ordner manuell nach `C:\Users\DEIN-NAME\.claude\skills\` (Claude Code) oder `C:\Users\DEIN-NAME\.agents\skills\` (Codex) kopieren. Fehlende Ordner anlegen.
 
+## Test: gezielte Rückfragen statt generischem Content
+
+Teste einen frisch aktivierten Skill zunächst **ohne Produktinformationen**:
+
+- `ecom-reel`: „Erstelle mir ein Instagram-Reel.“ → Erwartet werden gezielte Fragen **ohne fertiges Skript**.
+- `ecom-brand-voice`: „Erstelle meine Brand Voice.“ → Erwartet werden Marken- und Zielgruppenfragen **ohne fertiges Profil**.
+- `ecom-content-review`: „Prüfe meinen Instagram-Post.“ → Erwartet wird zuerst die Bitte um den **konkreten Beitrag**.
+- Anschließend stelle denselben Auftrag **mit vollständigen Fakten**: Der Skill soll **direkt** liefern, ohne dieselben Fragen zu wiederholen.
+
+Die Fragen werden als Chatnachrichten gestellt. Die Skills dürfen **keine spezielle plattformabhängige Formularansicht voraussetzen**.
+
 ## Kurztest
 
 - `ecom-brand-voice`: „Entwickle zwei Instagram-Stimmen für meinen Shop ohne bisherige Captions. Kennzeichne Vorschläge als vorläufig.“

@@ -28,3 +28,7 @@ Diese offenen Tests müssen in Claude/Codex mit [ACCEPTANCE.md](ACCEPTANCE.md) a
 - Der Validator wird mit absichtlich beschädigten Testdateien getestet (Negativtests).
 - GitHub-Action nutzt checkout@v5 statt der älteren Node-20-Version.
 - Die veraltete Instagram-Handle-Angabe in README und das Changelog-Datum wurden korrigiert.
+
+## v2.1 – Zusätzliche Intake-Abdeckung
+
+Der gemeinsame Dialog-Prozess wurde in allen neun eigenständig installierbaren Skills hinterlegt. Ein neuer automatischer Test prüft das **Vorhandensein der Pflichtfeld-, Rückfrage- und Stopp-Regeln**. Er simuliert **keine** tatsächlichen Claude-/ChatGPT-Antworten. Vierzehn manuelle Intake-Szenarien stehen in [ACCEPTANCE.md](ACCEPTANCE.md). Die Ergebnisse werden erst nach einer echten Ausführung als bestanden oder nicht bestanden eingetragen.

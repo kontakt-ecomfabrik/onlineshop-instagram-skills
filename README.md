@@ -18,6 +18,27 @@
 | **[ecom-brand-voice](ecom-brand-voice/)** | **Eigene Instagram-Markenstimme entwickeln und festhalten** |
 | **[ecom-content-review](ecom-content-review/)** | **Fertigen Instagram-Beitrag vor Veröffentlichung prüfen** |
 
+## Neu: Interaktive Fragen bei zu wenig Informationen
+
+Ein allgemeiner Auftrag wie **„Erstelle mir ein Instagram-Reel“** löst zuerst kurze Fragen aus — beispielsweise zu Produkt, Zielgruppe, Reel-Ziel und vorhandenem Material. **Erst mit ausreichenden Angaben** erstellt der Skill das fertige Ergebnis. Das gilt für **alle neun Skills**.
+
+- **Kein langer Fragebogen:** Im Normalfall ein bis drei kurze Gesprächsfragen, angepasst an das gewählte Format.
+- **Keine Wiederholungen:** Informationen aus dem bisherigen Gespräch werden berücksichtigt; nur fehlende entscheidende Angaben werden erfragt.
+- **Keine unnötigen Hürden:** Wer alle wichtigen Fakten geliefert hat, erhält direkt den Inhalt. Optionale Details müssen nicht geliefert werden.
+- **Ausnahme:** Bei „Zeige mir nur ein Beispiel“ oder „Entscheide selbst“ sind sichtbar markierte Musterentwürfe möglich. Fakten wie Produktherkunft, Wirkung, Material oder Lagerbestand werden weiterhin nicht erfunden.
+- **Kompatibel mit Claude und ChatGPT:** Standard sind gewöhnliche Rückfragen im Chat, keine vorausgesetzte besondere Formularfunktion.
+- **Kein Zugriff auf fremde Accounts:** Aus einer Instagram-URL allein lässt sich kein überprüftes Markenprofil ableiten, wenn keine echte Kontoanalyse möglich war.
+
+### Beispiel: Reel ohne Briefing
+
+**Nutzer:** „Erstelle mir ein Instagram-Reel.“
+
+**Skill:** „Welches Produkt soll im Mittelpunkt stehen? Wen möchtest du damit erreichen und welche Frage beantworten? Welche Fotos oder Videos hast du bereits?“
+
+**Nutzer:** „Ein kleiner Silberanhänger, für Menschen, die ein persönliches Geschenk suchen. Ich habe nur Produktfotos.“
+
+**Skill:** Erst jetzt konkretisiert er die nachweisbaren Produkteigenschaften, falls sie für die gewählte Aussage benötigt werden, und plant anschließend ein realistisch umsetzbares Reel aus Produktfotos.
+
 ## So arbeiten sie zusammen
 
 1. **Einmalig Brand Voice definieren:** Shop und Zielgruppe beschreiben, ggf. echte bisherige Captions einfügen; zwei Stilrichtungen vergleichen. Ergebnis als `brand-voice.md` speichern und bestätigen.

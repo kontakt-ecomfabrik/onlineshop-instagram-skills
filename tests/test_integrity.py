@@ -40,6 +40,18 @@ class SkillIntegrityTests(unittest.TestCase):
                     archive.extractall(extraction)
                 self.assertTrue((extraction / name / "SKILL.md").is_file())
 
+    def test_each_skill_has_intake_gate_and_specific_questions(self):
+        for name in NAMES:
+            with self.subTest(skill=name):
+                skill = (ROOT / name / "SKILL.md").read_text(encoding="utf-8")
+                self.assertIn("## Pflichtangaben und interaktiver Einstieg", skill)
+                self.assertIn("**Pflichtangaben für diesen Skill:**", skill)
+                self.assertIn("**Warte auf die Antworten**", skill)
+                self.assertIn("bereits genannte Antworten nicht wiederholen", skill)
+                self.assertIn("**sofort arbeiten**", skill)
+                self.assertIn("kein langer Fragebogen", skill)
+                self.assertIn("**1–3 kurze, konkrete, zur Anfrage passende Fragen**", skill)
+
     def temp_checkout(self, directory):
         target = Path(directory)
         (target / "scripts").mkdir()

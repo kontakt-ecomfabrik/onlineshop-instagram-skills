@@ -14,4 +14,4 @@ Collect only the fields needed for the current task:
 - Available proof: reviews, demonstrations, tests, founder experience, production footage, FAQs
 - Production constraints: face-to-camera, faceless, hands-only, product footage, photos, time, frequency
 
-When multiple fields are missing, ask at most three grouped questions. Do not block a useful draft for nonessential gaps. Mark assumptions as assumptions and never turn them into claims.
+Only collect fields **essential to the current task**. For a generic content-creation request without a known shop/product, audience or objective, ask up to three concise grouped questions **and wait**. Do not produce a finished post on invented context. Reuse facts already provided; do not require optional fields such as prices, metrics, imagery or brand voice unless the requested deliverable depends on them. A specifically requested illustrative example may use clearly labeled placeholders but never invented verified claims.
