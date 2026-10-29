@@ -1,230 +1,100 @@
-# Instagram-Skills für Onlinehändler
+# EcomFabrik Instagram Skills für Onlineshops
 
-Sieben wiederverwendbare Agent Skills für Onlineshops, Produktmarken, Etsy-Seller, Shopify- und WooCommerce-Shops, Amazon-Händler sowie Hersteller.
+**Neun eigenständige Agent Skills**, um Instagram-Content für Shops und Produktmarken zu planen, zu schreiben und kritisch zu prüfen. Konkrete Produkte, Kundenfragen und Kaufentscheidungen stehen im Vordergrund – kein generischer Business-Coach-Content.
 
-Die Skills helfen bei Instagram-Strategie, Content-Ideen, Reels, Carousels, Stories und Captions. Im Mittelpunkt stehen Produkte, Kundenfragen, Kaufbarrieren und die Customer Journey – nicht allgemeiner Coach-Content.
+**Keine EcomFabrik-Anmeldung oder Instagram-API nötig.** Für Claude bzw. Codex benötigst du Zugang zum jeweiligen KI-Dienst. Nichts wird automatisch gepostet, und ohne von dir bereitgestellte Daten werden keine Instagram-Insights gelesen.
 
-**Keine Anmeldung, kein API-Schlüssel und keine Instagram-Verbindung erforderlich.**
+## Die 9 Skills
 
-> **Nichts wird automatisch veröffentlicht.** Die Skills erstellen Strategien und Content-Entwürfe. Du prüfst, gestaltest und veröffentlichst selbst.
-
-## Was dieses Paket besonders macht
-
-- Inhalte werden aus realen Produkten, Anwendungen und Kundenfragen entwickelt.
-- Produktmerkmale werden in nachvollziehbare Nutzung und Entscheidungshilfe übersetzt.
-- Fehlende Fakten werden als Annahme oder Platzhalter gekennzeichnet.
-- Jeder Inhalt erhält eine klare Aufgabe: Reichweite, Vertrauen, Abwägung, Kauf, Nutzung oder Kundenbindung.
-- Reels, Carousels, Stories und Captions folgen jeweils einem eigenen Workflow.
-- Generische Marketingfloskeln und austauschbarer Coach-Content werden vermieden.
-- Die vorgeschlagene Frequenz richtet sich nach den tatsächlich verfügbaren Ressourcen.
-
-## Installation
-
-Die vollständige Schritt-für-Schritt-Anleitung findest du in **[INSTALLATION.md](INSTALLATION.md)**.
-
-### Claude – Kurzfassung
-
-1. Gewünschten Skill-Ordner einzeln als ZIP-Datei verpacken.
-2. In Claude **Customize → Skills** öffnen.
-3. **+ → Create skill → Upload a skill** wählen.
-4. ZIP-Datei hochladen und den Skill aktivieren.
-
-Die ZIP-Datei muss den vollständigen Skill-Ordner enthalten:
-
-```text
-ecom-reel.zip
-└── ecom-reel/
-    ├── SKILL.md
-    └── references/
-```
-
-### Claude Code – alle Skills installieren
-
-```bash
-git clone https://github.com/kontakt-ecomfabrik/onlineshop-instagram-skills.git
-mkdir -p ~/.claude/skills
-cp -R onlineshop-instagram-skills/ecom-* ~/.claude/skills/
-```
-
-### Codex – alle Skills installieren
-
-```bash
-git clone https://github.com/kontakt-ecomfabrik/onlineshop-instagram-skills.git
-mkdir -p ~/.agents/skills
-cp -R onlineshop-instagram-skills/ecom-* ~/.agents/skills/
-```
-
-Bei einem privaten Repository ist ein angemeldeter GitHub-Zugang erforderlich.
-
-## Die sieben Skills
-
-| Skill | Aufgabe |
+| Skill | Wofür? |
 | --- | --- |
-| [`ecom-content`](ecom-content/) | Zentraler Content-Router für gemischte Anfragen. Wählt den passenden Workflow und verbindet Produkt, Zielgruppe, Kaufphase und Content-Ziel. |
-| [`ecom-content-strategy`](ecom-content-strategy/) | Entwickelt realistische Instagram-Strategien mit Zielen, Customer Journey, Content-Säulen, Prioritäten, Frequenz und Messung. |
-| [`ecom-content-ideas`](ecom-content-ideas/) | Erstellt konkrete, nicht generische Ideen aus Produkten, Kundenfragen, Einwänden, Bewertungen und Kaufphasen. |
-| [`ecom-reel`](ecom-reel/) | Erstellt produktbezogene Reels mit Hooks, Skript, Szenen, gesprochenem Text, On-Screen-Text, CTA und Faceless-Variante. |
-| [`ecom-carousel`](ecom-carousel/) | Erstellt kompakte Carousels für Produktwissen, Vergleiche, FAQs, Einwände, Kaufhilfen und Checklisten. |
-| [`ecom-story`](ecom-story/) | Erstellt kurze Story-Sequenzen für Produkte, Launches, Umfragen, FAQs, Social Proof, Angebote und Behind-the-Scenes. |
-| [`ecom-caption`](ecom-caption/) | Schreibt natürliche Captions, die einen Post ergänzen, statt sichtbare Inhalte nur zu wiederholen. |
+| [ecom-content](ecom-content/) | Allgemeine Instagram-Aufgabe und passende Formatwahl |
+| [ecom-content-strategy](ecom-content-strategy/) | Ziele, Zielgruppe, Customer Journey, Content-Säulen, Messung |
+| [ecom-content-ideas](ecom-content-ideas/) | Produktspezifische Ideen aus Kaufbarrieren und Kundenfragen |
+| [ecom-reel](ecom-reel/) | Reel-Hooks, Skripte, Szenen und Faceless-Varianten |
+| [ecom-carousel](ecom-carousel/) | Karussell-Slides, Produktwissen und Kaufhilfen |
+| [ecom-story](ecom-story/) | Story-Sequenzen, FAQs und sinnvolle Interaktionen |
+| [ecom-caption](ecom-caption/) | Natürliche Captions, die den Post ergänzen |
+| **[ecom-brand-voice](ecom-brand-voice/)** | **Eigene Instagram-Markenstimme entwickeln und festhalten** |
+| **[ecom-content-review](ecom-content-review/)** | **Fertigen Instagram-Beitrag vor Veröffentlichung prüfen** |
 
-## Welchen Skill soll ich verwenden?
+## Neu: Interaktive Fragen bei zu wenig Informationen
 
-| Wenn du … | Nutze … |
-| --- | --- |
-| noch nicht weißt, welches Format sinnvoll ist | `ecom-content` |
-| eine langfristige Richtung oder einen Monatsplan brauchst | `ecom-content-strategy` |
-| zuerst konkrete Themen und Hooks sammeln möchtest | `ecom-content-ideas` |
-| ein Kurzvideo erstellen möchtest | `ecom-reel` |
-| Wissen oder Vergleiche auf Slides erklären möchtest | `ecom-carousel` |
-| eine kurze tägliche oder interaktive Sequenz brauchst | `ecom-story` |
-| bereits einen Post hast und die Caption fehlt | `ecom-caption` |
+Ein allgemeiner Auftrag wie **„Erstelle mir ein Instagram-Reel“** löst zuerst kurze Fragen aus — beispielsweise zu Produkt, Zielgruppe, Reel-Ziel und vorhandenem Material. **Erst mit ausreichenden Angaben** erstellt der Skill das fertige Ergebnis. Das gilt für **alle neun Skills**.
 
-**Empfehlung:** Installiere alle sieben Skills. Verwende `ecom-content` als Einstieg, wenn du das passende Format noch nicht festgelegt hast.
+- **Kein langer Fragebogen:** Im Normalfall ein bis drei kurze Gesprächsfragen, angepasst an das gewählte Format.
+- **Keine Wiederholungen:** Informationen aus dem bisherigen Gespräch werden berücksichtigt; nur fehlende entscheidende Angaben werden erfragt.
+- **Keine unnötigen Hürden:** Wer alle wichtigen Fakten geliefert hat, erhält direkt den Inhalt. Optionale Details müssen nicht geliefert werden.
+- **Ausnahme:** Bei „Zeige mir nur ein Beispiel“ oder „Entscheide selbst“ sind sichtbar markierte Musterentwürfe möglich. Fakten wie Produktherkunft, Wirkung, Material oder Lagerbestand werden weiterhin nicht erfunden.
+- **Kompatibel mit Claude und ChatGPT:** Standard sind gewöhnliche Rückfragen im Chat, keine vorausgesetzte besondere Formularfunktion.
+- **Kein Zugriff auf fremde Accounts:** Aus einer Instagram-URL allein lässt sich kein überprüftes Markenprofil ableiten, wenn keine echte Kontoanalyse möglich war.
 
-## Beispiel-Prompts
+### Beispiel: Reel ohne Briefing
 
-Die folgenden Beispiele verwenden den direkten Aufruf in **Claude Code** mit `/`. In **Codex** ersetzt du den Schrägstrich durch `$`, zum Beispiel `$ecom-reel`. In Claude im Browser aktivierst du den Skill und verwendest den restlichen Prompt ohne die erste Befehlszeile.
+**Nutzer:** „Erstelle mir ein Instagram-Reel.“
 
-### Strategie
+**Skill:** „Welches Produkt soll im Mittelpunkt stehen? Wen möchtest du damit erreichen und welche Frage beantworten? Welche Fotos oder Videos hast du bereits?“
 
+**Nutzer:** „Ein kleiner Silberanhänger, für Menschen, die ein persönliches Geschenk suchen. Ich habe nur Produktfotos.“
+
+**Skill:** Erst jetzt konkretisiert er die nachweisbaren Produkteigenschaften, falls sie für die gewählte Aussage benötigt werden, und plant anschließend ein realistisch umsetzbares Reel aus Produktfotos.
+
+## So arbeiten sie zusammen
+
+1. **Einmalig Brand Voice definieren:** Shop und Zielgruppe beschreiben, ggf. echte bisherige Captions einfügen; zwei Stilrichtungen vergleichen. Ergebnis als `brand-voice.md` speichern und bestätigen.
+2. **Strategie und Ideen:** Prioritäten, Produkte und Kundenfragen mit `ecom-content-strategy` bzw. `ecom-content-ideas` bestimmen. Fehlende Daten bleiben Hypothesen.
+3. **Inhalte erstellen:** Reel, Carousel, Story oder Caption. Das bestätigte **Brand-Voice-Profil als Eingabe einfügen oder hochladen**, wenn es in der aktuellen Umgebung nicht vorhanden ist.
+4. **Vor Veröffentlichung prüfen:** Entwurf mit `ecom-content-review` auf verständliche Aussagen, Markenstimme, echte Belege und offene Medien-/Werberechte prüfen. Die endgültige Freigabe bleibt beim Shop.
+
+**Jeder Skill funktioniert einzeln.** Nicht alle neun müssen installiert werden. Die Ausführung anderer Skills oder das dauerhafte Speichern des Markenprofils geschieht **nicht automatisch** durch diese Dateien.
+
+## Beispiele
+
+### Markenstimme entwickeln
 ```text
-/ecom-content-strategy
-
-Ich betreibe einen Onlineshop für [PRODUKT/KATEGORIE].
-Meine Zielgruppe ist [ZIELGRUPPE].
-Mein wichtigstes Ziel für die nächsten 30 Tage ist [ZIEL].
-
-Entwickle eine realistische Instagram-Strategie.
-Frage nur nach Informationen, die das Ergebnis wesentlich verändern.
-Kennzeichne Annahmen deutlich.
+Entwickle mit ecom-brand-voice unsere Instagram-Markenstimme.
+Shop: [PRODUKTWELT]  Zielgruppe: [KUNDEN]
+Hier sind drei bisherige Captions: [TEXTE].
+Vergleiche zwei deutlich unterschiedliche Stilrichtungen.
+Trenne Beobachtungen von deinen Vorschlägen.
 ```
 
-### Content-Ideen
-
+### Reel erstellen
 ```text
-/ecom-content-ideas
-
-Erstelle zehn konkrete Instagram-Ideen für [PRODUKT].
-Berücksichtige Kundenfragen, Kaufbarrieren, Nutzung und Kundenbindung.
-Vermeide austauschbare Tipps, die genauso für Coaches passen würden.
+Erstelle mit ecom-reel ein 20-Sekunden-Reel für [PRODUKT].
+Bestätigte Produktinfos: [DATEN].
+Kundenfrage: [FRAGE]. Vorhandene Fotos/Videos: [MATERIAL].
+Brand Voice: [BESTÄTIGTES PROFIL].
 ```
 
-### Reel
-
+### Content prüfen
 ```text
-/ecom-reel
-
-Erstelle ein 20-sekündiges Reel für [PRODUKT].
-Zielgruppe: [ZIELGRUPPE]
-Kundenfrage oder Einwand: [FRAGE]
-Verfügbares Material: [PRODUKTVIDEO/FOTOS/TALKING HEAD]
-Ziel: [REICHWEITE/VERTRAUEN/KAUF]
-
-Liefere drei Hooks, das finale Skript, On-Screen-Text,
-eine Szenenliste und einen passenden CTA.
+Prüfe mit ecom-content-review diese Instagram-Caption: [TEXT].
+Bestätigte Fakten: [FAKTEN]. Brand Voice: [PROFIL, FALLS VORHANDEN].
+Prüfe konkrete Schwachstellen, mögliche unbelegte Aussagen und Markenpassung.
+Schreibe anschließend eine überarbeitete Fassung ohne erfundene Angaben.
 ```
 
-### Carousel
+## Installation und Qualität
 
-```text
-/ecom-carousel
+[Schritt-für-Schritt-Installation](INSTALLATION.md) für Claude, Claude Code und Codex. Die Skills sind je ein Ordner mit `SKILL.md` und eigenen `references/`. Updates im GitHub-Repository aktualisieren bereits installierte ZIPs **nicht automatisch**.
 
-Erstelle ein Instagram-Carousel mit maximal fünf Slides zum Thema [THEMA].
-Nutze höchstens drei kurze Zeilen pro Slide.
-Die letzte Slide soll eine klare Handlung oder Frage enthalten.
-```
+- `python3 scripts/validate_skills.py` prüft Struktur, Namen, Beschreibungen und lokale Referenzen; ein GitHub-Workflow führt die Prüfung bei Push/PR aus.
+- [Manuelle Akzeptanztests](tests/ACCEPTANCE.md) beschreiben reale Testfälle. Der Strukturtest **beweist kein korrektes Modellverhalten** in Claude oder Codex.
+- Kein automatisches Veröffentlichen, Auslesen fremder Accounts oder garantierte Reichweite/Umsatz.
+- Werbekennzeichnung, kommerzielle Musik, Bild-/UGC-Rechte und sensible Produktclaims sind **Prüfpunkte**, keine Rechtsberatung.
 
-### Story
+## Offizielle Referenzen
 
-```text
-/ecom-story
-
-Erstelle eine Story-Sequenz mit drei bis fünf Frames für [PRODUKT/ANLASS].
-Ziel: [ZIEL]
-Verfügbares Bildmaterial: [MATERIAL]
-Nutze nur dann einen Sticker, wenn die Antwort wirklich weiterverwendet wird.
-```
-
-### Caption
-
-```text
-/ecom-caption
-
-Schreibe eine natürliche Caption für diesen bestehenden Post:
-[INHALT DES POSTS]
-
-Die Caption soll einen neuen Gedanken ergänzen und den Post nicht wiederholen.
-Ton: ehrlich, direkt, ruhig und fachlich.
-```
-
-## Wie die Skills arbeiten
-
-1. Der Shop, das Produkt und die Zielgruppe werden eingeordnet.
-2. Die relevante Kundenfrage oder Kaufbarriere wird bestimmt.
-3. Der Inhalt erhält eine klare Aufgabe innerhalb der Customer Journey.
-4. Nur passende Fakten und verfügbare Belege werden verwendet.
-5. Das Ergebnis wird im geeigneten Format ausgegeben.
-6. Annahmen, fehlende Nachweise oder offene Produktinformationen werden transparent gekennzeichnet.
-
-## Was die Skills nicht tun
-
-- Sie veröffentlichen nicht automatisch auf Instagram.
-- Sie liken, kommentieren, folgen oder versenden keine automatischen DMs.
-- Sie erfinden keine Produkteigenschaften, Bewertungen, Zahlen oder Kundenergebnisse.
-- Sie ersetzen keine fachliche, rechtliche oder werbliche Prüfung.
-- Sie garantieren weder Reichweite noch Verkäufe.
-- Sie greifen ohne zusätzliche Tools nicht auf Instagram-Konten oder Shop-Daten zu.
-
-## Ordnerstruktur
-
-```text
-onlineshop-instagram-skills/
-├── ecom-content/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-content-strategy/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-content-ideas/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-reel/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-carousel/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-story/
-│   ├── SKILL.md
-│   └── references/
-├── ecom-caption/
-│   ├── SKILL.md
-│   └── references/
-├── INSTALLATION.md
-└── README.md
-```
-
-Jeder Skill besteht aus einer `SKILL.md` mit Anweisungen und einem Ordner `references/` mit den dazugehörigen Arbeitsgrundlagen.
-
-## Hinweise zur Nutzung
-
-Gute Ergebnisse hängen von guten Ausgangsinformationen ab. Hilfreich sind insbesondere:
-
-- Produkt und nachweisbare Merkmale
-- Zielgruppe und Nutzungssituation
-- häufige Kundenfragen oder Einwände
-- vorhandene Bilder, Videos und Bewertungen
-- aktuelles Geschäftsziel
-- bereits veröffentlichte Inhalte
-
-Wenn Informationen fehlen, fragen die Skills gezielt nach oder arbeiten mit klar gekennzeichneten Annahmen.
+- [Claude: Custom Skills](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills)
+- [Claude: Skills nutzen](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
+- [OpenAI: Build Skills](https://learn.chatgpt.com/de-DE/docs/build-skills)
+- [Instagram: Lizenzierte Musik](https://www.facebook.com/help/instagram/402084904469945)
+- [GEMA: Musik für Reels gewerblich nutzen](https://www.gema.de/de/w/hilfe/musiknutzer/musik-nutzen/social-media-websites/instagrams-musikbibliothek-nutzen-fuer-story-reel)
+- [Medienanstalten: Werbekennzeichnung](https://www.die-medienanstalten.de/service/merkblaetter-und-leitfaeden/leitfaden-werbekennzeichnung-bei-online-medien/)
 
 ## Autorin
 
-Erstellt von **Dr. Kenanah Shereih** für **EcomFabrik**.
+**Dr. Kenanah Shereih – EcomFabrik** · [ecomfabrik.de](https://ecomfabrik.de) · [Instagram @ecomfabrik.de](https://www.instagram.com/ecomfabrik.de/)
 
-- Website: [ecomfabrik.de](https://ecomfabrik.de)
-- Instagram: [@ecom_fabrik.de](https://www.instagram.com/ecom_fabrik.de/)
-
-Für Onlineshops mit Vision – Content, SEO, Ads und KI strategisch nutzen.
+Ein öffentliches Repository ohne ausdrückliche Lizenz ist nicht automatisch zur beliebigen Weiterverwendung freigegeben.

@@ -1,53 +1,17 @@
-# Installation
+# Installation – EcomFabrik Instagram Skills (9 Skills)
 
-Diese Anleitung beschreibt die Installation der sieben **EcomFabrik Instagram Skills** in Claude, Claude Code und Codex.
+Alle Skills liegen in eigenständigen Ordnern mit `SKILL.md` und lokalen `references/`. Du kannst nur die benötigten Skills installieren. Zur Nutzung von Claude/Codex brauchst du Zugang zum jeweiligen Dienst; Instagram-Anmeldung oder API ist **nicht** erforderlich.
 
-## Voraussetzungen
+## Claude im Browser oder Desktop
 
-- Zugriff auf dieses GitHub-Repository
-- Bei Claude: **Code execution and file creation** muss aktiviert sein
-- Bei einem privaten Repository: Anmeldung bei GitHub beziehungsweise ein eingerichteter Git-Zugang
+1. Im [Repository](https://github.com/kontakt-ecomfabrik/onlineshop-instagram-skills) **Code → Download ZIP** wählen und die Datei entpacken.
+2. Gewünschten Ordner, etwa `ecom-brand-voice/`, **einzeln vollständig** zippen. In der ZIP muss ein oberster Ordner `ecom-brand-voice/` liegen, darin direkt `SKILL.md` und ggf. `references/`.
+3. In Claude **Customize → Skills** öffnen und über **+ / Create skill / Upload a skill** die ZIP hochladen und aktivieren (UI-Bezeichnungen können sich ändern).
+4. Für weitere Skills wiederholen. Für GitHub-Updates die ZIP erneut hochladen/ersetzen – **keine automatische Synchronisierung**.
 
-## 1. Claude im Browser oder in der Desktop-App
+Aktuelle Voraussetzungen: [Claude Help Center](https://support.claude.com/en/articles/12512180-use-skills-in-claude).
 
-Claude lädt benutzerdefinierte Skills als einzelne ZIP-Dateien hoch.
-
-### Schritt 1: Repository herunterladen
-
-1. Klicke auf GitHub auf **Code**.
-2. Wähle **Download ZIP**.
-3. Entpacke das heruntergeladene Repository.
-
-### Schritt 2: Gewünschten Skill vorbereiten
-
-Wähle beispielsweise den Ordner `ecom-reel` und komprimiere **diesen vollständigen Ordner** als ZIP-Datei.
-
-Die Struktur muss so aussehen:
-
-```text
-ecom-reel.zip
-└── ecom-reel/
-    ├── SKILL.md
-    └── references/
-```
-
-Die Dateien dürfen nicht ohne den Hauptordner direkt in der ZIP liegen.
-
-### Schritt 3: Skill hochladen
-
-1. Öffne in Claude **Customize → Skills**.
-2. Klicke auf **+** und anschließend auf **Create skill**.
-3. Wähle **Upload a skill**.
-4. Lade die ZIP-Datei hoch.
-5. Aktiviere den Skill über den Schalter.
-
-Wiederhole den Vorgang für alle Skills, die du verwenden möchtest.
-
-Offizielle Anleitung: [Use skills in Claude](https://support.claude.com/en/articles/12512180-use-skills-in-claude)
-
-## 2. Claude Code
-
-### Persönliche Installation für alle Projekte
+## Claude Code – Benutzerinstallation
 
 ```bash
 git clone https://github.com/kontakt-ecomfabrik/onlineshop-instagram-skills.git
@@ -55,42 +19,9 @@ mkdir -p ~/.claude/skills
 cp -R onlineshop-instagram-skills/ecom-* ~/.claude/skills/
 ```
 
-Danach Claude Code neu starten. Die Skills können automatisch passend zur Aufgabe aktiviert oder direkt aufgerufen werden, zum Beispiel:
+Für ein einzelnes Projekt nach `.claude/skills/` kopieren. Skills nach Umgebung automatisch wählen lassen oder explizit z. B. `/ecom-content-review` aufrufen.
 
-```text
-/ecom-reel
-/ecom-carousel
-/ecom-caption
-```
-
-### Installation nur für ein Projekt
-
-Kopiere die sieben Ordner in deinem Projekt nach:
-
-```text
-.claude/skills/
-```
-
-Beispiel:
-
-```text
-mein-projekt/
-└── .claude/
-    └── skills/
-        ├── ecom-content/
-        ├── ecom-content-strategy/
-        ├── ecom-content-ideas/
-        ├── ecom-reel/
-        ├── ecom-carousel/
-        ├── ecom-story/
-        └── ecom-caption/
-```
-
-## 3. Codex
-
-Aktuelle Codex-Versionen lesen persönliche Skills aus `$HOME/.agents/skills`.
-
-### Persönliche Installation für alle Projekte
+## Codex – Benutzerinstallation
 
 ```bash
 git clone https://github.com/kontakt-ecomfabrik/onlineshop-instagram-skills.git
@@ -98,99 +29,30 @@ mkdir -p ~/.agents/skills
 cp -R onlineshop-instagram-skills/ecom-* ~/.agents/skills/
 ```
 
-### Installation nur für ein Projekt
+Für ein Projekt nach `.agents/skills/` kopieren. In Codex z. B. `$ecom-brand-voice` auswählen. Bei ausbleibender Aktualisierung Codex neu starten. [Offizielle Codex-Anleitung](https://learn.chatgpt.com/de-DE/docs/build-skills).
 
-Kopiere die Skill-Ordner in:
+## Windows ohne Terminal
 
-```text
-.agents/skills/
-```
+Die neun Ordner manuell nach `C:\Users\DEIN-NAME\.claude\skills\` (Claude Code) oder `C:\Users\DEIN-NAME\.agents\skills\` (Codex) kopieren. Fehlende Ordner anlegen.
 
-Danach Codex neu starten, falls die Skills nicht sofort erscheinen.
+## Test: gezielte Rückfragen statt generischem Content
 
-Skills lassen sich in Codex direkt mit `$` auswählen oder über `/skills` anzeigen, zum Beispiel:
+Teste einen frisch aktivierten Skill zunächst **ohne Produktinformationen**:
 
-```text
-$ecom-content
-$ecom-reel
-$ecom-carousel
-```
+- `ecom-reel`: „Erstelle mir ein Instagram-Reel.“ → Erwartet werden gezielte Fragen **ohne fertiges Skript**.
+- `ecom-brand-voice`: „Erstelle meine Brand Voice.“ → Erwartet werden Marken- und Zielgruppenfragen **ohne fertiges Profil**.
+- `ecom-content-review`: „Prüfe meinen Instagram-Post.“ → Erwartet wird zuerst die Bitte um den **konkreten Beitrag**.
+- Anschließend stelle denselben Auftrag **mit vollständigen Fakten**: Der Skill soll **direkt** liefern, ohne dieselben Fragen zu wiederholen.
 
-Offizielle Anleitung: [Build skills – OpenAI](https://learn.chatgpt.com/docs/build-skills)
+Die Fragen werden als Chatnachrichten gestellt. Die Skills dürfen **keine spezielle plattformabhängige Formularansicht voraussetzen**.
 
-## 4. Windows ohne Terminal
+## Kurztest
 
-### Für Claude Code
+- `ecom-brand-voice`: „Entwickle zwei Instagram-Stimmen für meinen Shop ohne bisherige Captions. Kennzeichne Vorschläge als vorläufig.“
+- `ecom-content-review`: „Prüfe nur den Text dieser Caption, ich habe kein Video hochgeladen. Erfinde keine Produktfakten: …“
 
-Kopiere alle sieben `ecom-*`-Ordner nach:
+Erwartung: Kein vorgetäuschter Zugriff auf Konto oder Medien, keine erfundenen Produktergebnisse, sinnvoller nutzbarer Text. Strukturprüfung für Entwickler: `python3 scripts/validate_skills.py`. Verhalten anhand [manueller Tests](tests/ACCEPTANCE.md) prüfen.
 
-```text
-C:\Users\DEIN-NAME\.claude\skills\
-```
+**ChatGPT-Hinweis:** Eine ZIP als Chat-Anhang ist nicht gleichbedeutend mit der Installation eines Skills. Skill-Auswahl und Einbindung unterscheiden sich je nach ChatGPT-Produkt bzw. Codex-Umgebung; keine allgemeine `@`-Aktivierung behaupten.
 
-### Für Codex
-
-Kopiere alle sieben `ecom-*`-Ordner nach:
-
-```text
-C:\Users\DEIN-NAME\.agents\skills\
-```
-
-Falls der Ordner `.claude`, `.agents` oder `skills` nicht existiert, lege ihn manuell an.
-
-## 5. Installation prüfen
-
-Die erste Zeile aktiviert den Skill direkt. Verwende in Claude Code `/` und in Codex `$`.
-
-### Beispiel für Claude Code
-
-```text
-/ecom-reel
-
-Erstelle ein 20-sekündiges Reel für [PRODUKT].
-Zielgruppe: [ZIELGRUPPE]
-Ziel: [REICHWEITE/VERTRAUEN/KAUF]
-```
-
-### Dasselbe Beispiel in Codex
-
-```text
-$ecom-reel
-
-Erstelle ein 20-sekündiges Reel für [PRODUKT].
-Zielgruppe: [ZIELGRUPPE]
-Ziel: [REICHWEITE/VERTRAUEN/KAUF]
-```
-
-Weiteres Beispiel für Claude Code:
-
-```text
-/ecom-content-strategy
-
-Entwickle eine realistische Instagram-Strategie für meinen Onlineshop.
-Frage zuerst nur nach Informationen, die das Ergebnis wesentlich verändern.
-```
-
-In Claude im Browser aktivierst du den gewünschten Skill unter **Customize → Skills** und verwendest den Auftrag ohne die erste Befehlszeile.
-
-## Fehlerbehebung
-
-### Der Skill wird nicht angezeigt
-
-- Prüfe, ob der Ordner eine Datei namens `SKILL.md` enthält.
-- Prüfe, ob der Ordnername dem Skill-Namen entspricht.
-- Starte Claude Code oder Codex neu.
-- Aktiviere den Skill in Claude unter **Customize → Skills**.
-- Prüfe bei Claude, ob **Code execution and file creation** aktiviert ist.
-
-### Claude oder Codex verwendet den falschen Skill
-
-Rufe den gewünschten Skill ausdrücklich auf:
-
-- Claude Code: `/ecom-reel`
-- Codex: `$ecom-reel`
-- ChatGPT mit aktivierten Skills: Skill über `@` auswählen
-
-### GitHub-Download erzeugt doppelte Ordner
-
-Wenn nach dem Entpacken beispielsweise `ecom-reel/ecom-reel/` erscheint, verwende für die Installation den **inneren Ordner**, der direkt die Datei `SKILL.md` enthält.
+**Probleme:** Wird ein Skill nicht erkannt, Ordnerpfad/`SKILL.md` prüfen, Aktivierung im KI-Dienst bestätigen und Anwendung ggf. neu starten. Bei doppeltem ZIP-Ordner nur den inneren Ordner mit `SKILL.md` verwenden. Für Markenpassung ein bestätigtes `brand-voice.md` erneut bereitstellen; die Skills speichern es nicht dauerhaft.

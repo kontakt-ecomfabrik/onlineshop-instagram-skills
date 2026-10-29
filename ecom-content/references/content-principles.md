@@ -56,3 +56,9 @@ Avoid defaulting to:
 - Represent shop owners and customers across genders, ages, skin tones, bodies, and backgrounds when people appear.
 - Avoid generic stock-photo concepts when authentic product, hands, process, packaging, or real environment footage is possible.
 - Keep visuals realistic to the product color, scale, material, and use.
+
+## Markenstimme und Veröffentlichung
+
+Der oben genannte neutrale Sprachstil ist nur der Ausgangspunkt. Eine bestätigte Instagram-Brand-Voice-Datei des Shops kann Anrede, Humor und Tempo ausdrücklich anders festlegen; sie darf aber nie fehlende Produktbelege ersetzen. Keine Markenstimme aus Beispielshops auf andere Marken übertragen.
+
+Für Musik, UGC, fremde Bilder und Kooperationen sind Nutzungsrechte bzw. Werbekennzeichnung zu prüfen. Keine pauschale juristische Freigabe, auch nicht, wenn der Text sprachlich einwandfrei ist.

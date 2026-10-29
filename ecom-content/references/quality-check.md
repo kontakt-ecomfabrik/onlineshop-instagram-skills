@@ -14,3 +14,10 @@ Before delivery, confirm:
 - Any assumptions are visible.
 - The wording sounds natural when read aloud.
 - A similar recent topic, hook, example, or CTA has not been reused when a content history is available.
+
+## Zusätzliche Prüfungen
+
+- Passt der Beitrag zu einem **vorgelegten** Markenprofil? Ohne Profil nur allgemeine Textqualität bewerten.
+- Sind Kundenaussagen, Bilder, Audio und UGC zur Verwendung freigegeben oder als offene Punkte markiert?
+- Ist der CTA mit den tatsächlich vorhandenen Instagram-Funktionen des Shops umsetzbar?
+- Wenn Bild, Video oder Musik nicht vorliegen, keine vollständige Medienprüfung suggerieren.

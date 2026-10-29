@@ -1,16 +1,7 @@
-# Duplication check
+# Ähnlichkeitsprüfung statt Wiederholungsverbot
 
-When a content history exists, compare each new idea against prior content on:
+Vergleiche neue Ideen mit bereitgestellten bisherigen Beiträgen nach Kundenfrage, Zielgruppe, belegtem Produktaspekt, Kernnutzen, Beispiel, Format, Bildidee und CTA.
 
-- Core topic
-- Customer question
-- Hook mechanism
-- Product example
-- Buying phase
-- Format
-- CTA
-- Visual execution
+**Wiederholtes Thema ist kein automatischer Fehler.** Eine Serie darf eine Kaufbarriere mit neuem Nachweis, anderer Situation oder anderer Customer-Journey-Phase erneut behandeln. Kritisiere erst, wenn die wesentliche Aussage und der Erkenntnisgewinn gleich bleiben und nur der Einstieg umformuliert wird.
 
-Treat an idea as too similar when at least three important dimensions repeat without a new insight. Repair it by changing the evidence, customer situation, buying phase, comparison, demonstration, or outcome—not merely by rewriting the hook.
-
-For each retained idea, add one short “why distinct” note. Maintain a compact do-not-repeat list containing recently used themes, examples, and CTAs.
+Wenn kein Beitragsarchiv vorliegt, kennzeichne die Neuheitsprüfung als intern (zwischen deinen vorgeschlagenen Ideen), nicht als Instagram-Account-Audit. Keine schematische Drei-Kriterien-Regel verwenden.
